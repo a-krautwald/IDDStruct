@@ -1,0 +1,9 @@
+Category,Term,Definition,See also
+Typography,Leading,"The vertical distance between baselines of successive lines of text. Named after the strips of lead used in hot-metal typesetting.",Tracking
+Typography,Kerning,The adjustment of space between a specific pair of characters.,Tracking
+Typography,Tracking,Uniform adjustment of spacing across a range of characters.,"Kerning, Leading"
+Layout,Bleed,Printed content that extends beyond the trim edge so no white edge remains after cutting.,
+Layout,Gutter,"The space between columns, or the inner margin where pages meet at the spine.",
+Layout,Widow,"A short last line of a paragraph left alone at the top of a column.
+
+Editors usually fix widows by adjusting tracking or rewording.",Orphan
