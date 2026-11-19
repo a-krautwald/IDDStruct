@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>IDDStruct.Cli</RootNamespace>
+    <AssemblyName>iddstruct</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDDStruct.Core\IDDStruct.Core.csproj" />
+    <ProjectReference Include="..\IDDStruct.Idml\IDDStruct.Idml.csproj" />
+  </ItemGroup>
+</Project>

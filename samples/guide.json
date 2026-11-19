@@ -1,0 +1,32 @@
+{
+  "title": "Brand Guidelines",
+  "intro": "These guidelines keep our communication **consistent** across print and digital.",
+  "chapters": [
+    {
+      "title": "Logo",
+      "text": "Always use the master artwork supplied by the design team.",
+      "rules": ["Keep a clear space equal to the height of the logo mark", "Never stretch or recolour the logo", "Minimum width: 25 mm in print"],
+      "sections": [
+        { "title": "Colour variants", "text": "Use the full-colour logo on light backgrounds and the white logo on dark ones." }
+      ]
+    },
+    {
+      "title": "Colour",
+      "text": "Our palette has three primary colours.",
+      "palette": {
+        "type": "table",
+        "headerRows": 1,
+        "rows": [["Name", "CMYK", "Hex"], ["Harbour Blue", "100 60 0 20", "#00519E"], ["Signal Red", "0 90 85 0", "#E8352F"], ["Paper White", "0 0 0 0", "#FFFFFF"]]
+      }
+    },
+    {
+      "title": "Typography",
+      "owner": "Design team",
+      "blocks": [
+        { "type": "paragraph", "text": "Headings use *Myriad Pro*; body text uses *Minion Pro*." },
+        { "type": "numbered", "text": "Set body text at 10.5/14 pt" },
+        { "type": "numbered", "text": "Never use more than two weights on one page" }
+      ]
+    }
+  ]
+}

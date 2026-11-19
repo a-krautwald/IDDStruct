@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual>
+  <title>Print Production Manual</title>
+  <chapter>
+    <title>Preparing files</title>
+    <p>Before sending a job to print, check that every file meets the <b>printer's specification</b>.
+       Most problems are caught by a <i>preflight</i> check.</p>
+    <section>
+      <title>Checklist</title>
+      <ol>
+        <li>Images are at least 300 ppi at final size</li>
+        <li>All fonts are embedded or outlined</li>
+        <li>Bleed of 3 mm on every edge</li>
+      </ol>
+    </section>
+    <section>
+      <title>Colour</title>
+      <p>Convert RGB images to CMYK using the profile supplied by the printer.</p>
+      <note style="Callout">Spot colours must be named exactly as in the swatch book.</note>
+    </section>
+  </chapter>
+  <pagebreak/>
+  <chapter>
+    <title>Paper stocks</title>
+    <table>
+      <tr><th>Stock</th><th>Weight</th><th>Use</th></tr>
+      <tr><td>Silk</td><td>130 gsm</td><td>Brochure text pages</td></tr>
+      <tr><td>Uncoated</td><td>300 gsm</td><td>Covers and business cards</td></tr>
+    </table>
+    <blockquote>Choose the stock before the design, not after.</blockquote>
+  </chapter>
+</manual>

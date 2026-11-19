@@ -1,0 +1,20 @@
+type;level;text;style
+title;;Staff Handbook;
+p;;Welcome to the organisation. This handbook explains **how we work**, what you can expect from us and what we expect from you.;
+h2;;Working hours;
+p;;Our standard working week is 37 hours. Core hours are *10:00 to 15:00*, Monday to Friday.;
+bullet;;Flexible start between 07:00 and 10:00;
+bullet;;Lunch break of 30 minutes;
+bullet;2;Taken between 11:30 and 13:30;
+h2;;Holiday;
+p;;You are entitled to 25 days of paid holiday per year, plus public holidays.;
+numbered;;Agree dates with your manager;
+numbered;;Book the leave in the HR system;
+numbered;;Add an out-of-office reply;
+quote;;"""Rest is not idleness."" – John Lubbock";
+pagebreak;;;
+h1;;Appendix;
+table;;"Role | Contact | Phone
+HR | Anna Hansen | 12 34 56 78
+IT support | Lars Nielsen | 87 65 43 21";
+p;;Last revised November 2026.;Small Print

@@ -1,0 +1,41 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Core, IDML and CLI (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet test tests/IDDStruct.Tests --configuration Release
+      - name: Convert samples
+        run: |
+          mkdir -p out
+          for f in samples/*.csv samples/*.json samples/*.xml; do
+            dotnet run --project src/IDDStruct.Cli --configuration Release -- convert "$f" -o "out/$(basename "${f%.*}").idml"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sample-idml
+          path: out/*.idml
+
+  desktop:
+    name: Desktop app (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet build src/IDDStruct.Desktop/IDDStruct.Desktop.csproj --configuration Release -p:Platform=x64
+      - run: dotnet publish src/IDDStruct.Desktop/IDDStruct.Desktop.csproj --configuration Release -p:Platform=x64 -o publish
+      - uses: actions/upload-artifact@v4
+        with:
+          name: IDDStruct-win-x64
+          path: publish
